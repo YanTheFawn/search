@@ -19,8 +19,6 @@ function interpolationSearch(arr, val){
     // which can be calculated as
     // start + [val - arr[low] / (arr[high] - arr[low]] * (hi - low)
     selectedIndex =  Math.floor(start + ((val - arr[start]) / (arr[end] - arr[start])) * (end - start));
-    console.log('start is ', start);
-    console.log('end is ', end);
 
     if(arr[selectedIndex] === val ){
       return true;
