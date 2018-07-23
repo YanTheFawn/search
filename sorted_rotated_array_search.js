@@ -38,7 +38,7 @@ function rotatedArraySearch(arr, val){
     if(arr[low] <= arr[mid-1]){
       //if the value is in the left segment's range, discard the right segment
       if(val >= arr[low] && val <= arr[mid-1]){
-        high = mid -1;
+        high = mid - 1;
       //else discard the left segment
       } else {
         low = mid + 1;
@@ -57,6 +57,6 @@ function rotatedArraySearch(arr, val){
 }
 
 let myArr = [5,6,7,8,1,2,3,4];
-var res = rotatedArraySearch(myArr, 10);
+var res = rotatedArraySearch(myArr, 7);
 console.log('res is ', res);
 
